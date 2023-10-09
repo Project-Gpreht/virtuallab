@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Simulator</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+    
+    <style>
+        /* Add a sky blue background color to the body background */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;/* we can change font style by using the font-familiy css tag */
+    background-color: lightgoldenrodyellow;
+}
+ul{
+	position:absolute;/* set the position of the navigation bar*/
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0; /* Adding some padding */
+	background: orange; /* Add a white background color to the top navigation */
+	display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+ /* Style the links inside the navigation bar */
+ul li{
+	list-style: none;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:last-child{
+	border-right: none;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block;
+}
+/* Style the icon inside the navigation bar */
+ul li a .icon{
+	width: 40px; /* changing the width of the icon */
+	height: 40px; /* changing the height of the icon */
+	text-align: center;
+	
+	overflow: hidden;
+	margin: 0 auto 10px;
+	
+}
+/* set the size, height, width of the icon*/
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 34px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	color: #000;
+}
+
+/* Change the color of icon on hover */
+ul li a .icon .fa:last-child{
+	color: white;
+}
+/* style the color and transform of the icon on hover */
+ul li a:hover .icon .fa{
+	transform: translateY(-100%); /* translate y to add the hover effect */
+}
+ul li a .name{
+	position: relative;
+	height: 20px; 
+	width: 100%;
+	display: block;
+	overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000;
+	font-size: 18px; /* changing font size */
+	line-height: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	height: 1005;
+	color: white;
+	
+}
+/*style hover effect of ul li a .name span */
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="row">
+        <div class="column">
+                <img src="https://www.gprec.ac.in//wp-content/uploads/2019/05/gprec_logo_mobile.png" width="600px">
+        </div>
+        <div class="column">
+            <p id="mech">MECHANICAL ENGINEERING</p>
+        </div>
+        </div>
+        <div class="menu">
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Main\Experiments.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- this is home icon link get form fornt-awesome icon for home button -->	
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Home">Home</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Natural convection\procedure.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Procedure">Procedure</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Natural convection\simulator.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Simulator">Simulator</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Natural convection\Calculator.html">
+                    <!-- this anchor text for link your Blog page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- this is Book icon link get form fornt-awesome icon for Blog --> 	
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- copy and paste the Book icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Calculation">Calculation</span></div>
+                    <!-- we are create seventh menu item name Blog -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-users" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-users" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->			
+                    </div>
+                    <div class="name"><span data-text="Team">Team</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+        </div>
+        <div class="sim">
+            <img id="temp" src="https://i.ibb.co/rKBkQNh/Nt1.jpg">
+            <button id="rev" onclick="powerdec()"><i class="arrow left"></i></button>
+            <button id="forw" onclick="powerinc()"><i class="arrow right"></i></button>
+            <button id="on" onclick="poweronoff()"><img id="power" src="https://i.ibb.co/FVX68K1/poweroff.jpg"></button>
+            <button id="left" onclick="changedec()"><i class="arrow left"></i></button>
+            <button id="right" onclick="changein()"><i class="arrow right"></i></button>
+            <div class="tempdisplay">
+              <div class="display1 display">
+                <h1 id="temperature"></h1>
+              </div>
+            </div>
+            <div class="voltdisplay">
+                <div class="display2 display">
+                  <h1 id="voltage"></h1>
+                </div>
+              </div>
+              <div class="ammeterdisplay">
+                <div class="display3 display">
+                  <h1 id="current"></h1>
+                </div>
+              </div>
+              <img id="dimmerstat" src="https://i.ibb.co/Nt547Rz/dimmerstat.jpg">
+            </div>
+            <script>
+                let temps=[[28,28,28,28,28,28,28,28],[50,68,89,104,95,113,103,31],[65,96,130,151,134,160,138,34],[80,121,163,186,165,194,165,36]]
+                let vi=[[0,0],[47,0.22],[66,0.31],[81,0.38]]
+                let power_status=false;
+                var x=0;
+                var y=0;
+                let t=[28,28,28,28,28,28,28,28];
+                let voltage=0;
+                let current=0;
+                function poweronoff(){
+                    let image = document.getElementById("power");
+                    if (image.src.includes("off")) {
+                        image.src ="https://i.ibb.co/vq6VMh5/poweron.jpg";
+                        power_status=true;
+                        var displayElement = document.getElementsByClassName("display1")[0].style;
+                        displayElement.width = "55px";
+                        displayElement.height = "23px";
+                        displayElement.backgroundColor = "rgba(150, 0, 0, 0.5)";
+                        displayElement.boxShadow = "0 0 25px rgba(255, 0, 0, 0.8)";
+                        displayElement.position = "relative";
+                        displayElement.top = "23px";
+                        displayElement.left = "25px";
+
+                        var displayElement = document.getElementsByClassName("display2")[0].style;
+                        displayElement.width = "63px";
+                        displayElement.height = "20px";
+                        displayElement.backgroundColor = "rgba(255, 0, 0, 0.5)";
+                        displayElement.boxShadow = "0 0 50px rgba(255, 0, 0, 0.8)";
+                        displayElement.position = "relative";
+                        displayElement.top = "19px";
+                        displayElement.left = "25px";
+
+                        var displayElement = document.getElementsByClassName("display3")[0].style;
+                        displayElement.width = "63px";
+                        displayElement.height = "20px";
+                        displayElement.backgroundColor = "rgba(255, 0, 0, 0.5)";
+                        displayElement.boxShadow = "0 0 50px rgba(255, 0, 0, 0.8)";
+                        displayElement.position = "relative";
+                        displayElement.top = "19px";
+                        displayElement.left = "25px";
+                        document.getElementById("temperature").innerHTML=t[x];
+                        document.getElementById("voltage").innerHTML=vi[y][0];
+                        document.getElementById("current").innerHTML=vi[y][1];
+                    }
+                    else {
+                        image.src ="https://i.ibb.co/FVX68K1/poweroff.jpg";
+                        power_status=false;
+                        var displayElement = document.getElementsByClassName("display1")[0].style;
+                        displayElement.width = "";
+                        displayElement.height = "";
+                        displayElement.backgroundColor = "";
+                        displayElement.boxShadow = "";
+                        displayElement.position = "";
+                        displayElement.top = "";
+                        displayElement.left = "";
+                        var displayElement = document.getElementsByClassName("display2")[0].style;
+                        displayElement.width = "";
+                        displayElement.height = "";
+                        displayElement.backgroundColor = "";
+                        displayElement.boxShadow = "";
+                        displayElement.position = "";
+                        displayElement.top = "";
+                        displayElement.left = "";
+                        var displayElement = document.getElementsByClassName("display3")[0].style;
+                        displayElement.width = "";
+                        displayElement.height = "";
+                        displayElement.backgroundColor = "";
+                        displayElement.boxShadow = "";
+                        displayElement.position = "";
+                        displayElement.top = "";
+                        displayElement.left = "";
+                        document.getElementById("temperature").innerHTML="";
+                        document.getElementById("voltage").innerHTML="";
+                        document.getElementById("current").innerHTML="";
+                        tempupdate();
+                        
+                    }
+                }
+                a=['https://i.ibb.co/rKBkQNh/Nt1.jpg',
+                "https://i.ibb.co/0qmV1C2/Nt2.jpg",
+                "https://i.ibb.co/C5qRjCD/Nt3.jpg",
+                "https://i.ibb.co/vPx22Cy/Nt4.jpg",
+                "https://i.ibb.co/x3qFnkd/Nt5.jpg",
+                "https://i.ibb.co/Kh61238/Nt6.jpg",
+                "https://i.ibb.co/SN9vf0C/Nt7.jpg",
+                "https://i.ibb.co/qpbJWGF/Nt8.jpg"];
+                function powerinc()
+                {
+                    if(y+1>vi.length-1)
+                    {
+                        y=vi.length-1;
+                    }
+                    else
+                    {
+                        y++;
+                    }
+                    if(power_status){
+                        document.getElementById("voltage").innerHTML=vi[y][0];
+                        document.getElementById("current").innerHTML=vi[y][1];
+                        tempupdate();
+                    }
+                }
+                function powerdec()
+                {
+                    if(y-1<0)
+                    {
+                        y=0;
+                    }
+                    else
+                    {
+                        y--;
+                    }
+                    if(power_status){
+                        document.getElementById("voltage").innerHTML=vi[y][0];
+                        document.getElementById("current").innerHTML=vi[y][1];
+                        tempupdate();
+                    }
+                }
+                function changein()
+                {
+                    if(x+1>a.length-1)
+                    {
+                        document.getElementById("temp").src=a[a.length-1];
+                    }
+                    else
+                    {
+                        x++;
+                        document.getElementById("temp").src=a[x];
+                    }
+                    if(power_status){
+                        document.getElementById("temperature").innerHTML=t[x];
+                    }
+                }
+                function changedec()
+                {
+                    if(x-1<0)
+                    {
+                        document.getElementById("temp").src=a[0];
+                    }
+                    else
+                    {
+                        x--;
+                        document.getElementById("temp").src=a[x];
+                    }
+                    if(power_status){
+                        document.getElementById("temperature").innerHTML=t[x];
+                    }
+                }
+                function tempupdate(){
+                    let timerInterval;
+                    function updateValue() {
+                        for(let i=0;i<8;i++){
+                            const givenNumber = temps[y][i];
+                            if (t[i] > givenNumber ||(power_status==false && givenNumber>28)) {
+                                t[i]--;
+                            }
+                            else if(t[i]<givenNumber){
+                                t[i]++;
+                            }
+                            if(power_status){
+                                document.getElementById('temperature').innerHTML= t[x];
+                            }
+                        }
+                    }
+                    function startTimer() {
+                        timerInterval = setInterval(updateValue, 5000);
+                    }
+                    function stopTimer() {
+                        clearInterval(timerInterval);
+                    }
+                    startTimer();
+                }
+        </script>
+         <style>
+            .arrow {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+        
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);                }
+            .left {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+            #on{
+                position:relative;
+                top:285px;
+                left:-30px;
+                width:30px;
+                height:40px;
+            }
+            #rev{
+                position: relative;
+                top:300px;
+                left:20px;
+            }
+            #forw{
+                position: relative;
+                top:300px;
+                left:60px;
+            }
+            
+            #dimmerstat{
+                position:relative;
+                top:2px;
+                left:105px;
+                width:90px;
+                height:50px;
+            }
+        .sim{
+            background-image: url("https://i.ibb.co/DGgnVKg/convectionappartus.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height:800px;
+            width:800px;
+            position:absolute;/* set the position of the navigation bar*/
+	        top: 800px;
+	        left: 50%;
+	        transform: translate(-50%,-50%);
+            border: 2px solid black;
+        
+        }
+        #temp{
+            width:81px;
+            height:79px;
+            position: relative;
+            top:468px;
+            left:282px;
+        }
+        #left{
+            position:relative;
+            top:490px;
+            left:109px;
+        }
+        #right{
+            position:relative;
+            top:490px;
+            left:135px;
+        }
+        .tempdisplay{
+          width:110px;
+          height:63px;
+          background-image: url("https://i.ibb.co/yYBZmXG/tempindicator.jpg");
+          background-repeat: no-repeat;
+          background-size: 110px 63px;
+          position:relative;
+          top:295px;
+          left:267px;
+        }
+        .voltdisplay{
+            width:113px;
+            height:58px;
+            background-image: url("https://i.ibb.co/dm4fgNd/voltmeter.jpg");
+            background-repeat: no-repeat;
+            background-size: 110px 55px;
+            position:relative;
+            top:132px;
+            left:210px;
+        }
+        .ammeterdisplay{
+            width:110px;
+            height:55px;
+            background-image: url("https://i.ibb.co/fD3BzDZ/ammeter.jpg");
+            background-repeat: no-repeat;
+            background-size: 110px 55px;
+            position:relative;
+            top:58px;
+            left:348px;
+        }
+        #power{
+            position:relative;
+            top:-3px;
+            left:-63px;
+            width:30px;
+            height:40px;
+        }
+        #temperature,#voltage,#current{
+            color: rgb(500, 0, 0);
+            text-align:center;
+            font-family: "digital-7";
+            font-size: 25px;
+            text-shadow: 0 0 80px;
+        }
+        @font-face{
+            font-family:"digital-7";
+            src:url(digital-7.ttf);
+        }
+        /*
+        C:/Users/Admin/Downloads/digital-dream/DIGITALDREAM.ttf
+        */
+    .menu{
+        position:relative;
+        top:30px;
+    }
+.col1{
+    position:relative;
+    right:1px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 80%;
+  padding: 5px;
+}
+#mech{
+    font-size: 45px;
+    font-family: sans-serif;
+    color:lightblue;
+    position:relative;
+    left:1px;
+}
+    </style>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!doctype html>
+    <head>
+        <title>Procedure</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+    
+    <style>
+        /* Add a sky blue background color to the body background */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;/* we can change font style by using the font-familiy css tag */
+    background-color: lightgoldenrodyellow;
+}
+ul{
+	position:absolute;/* set the position of the navigation bar*/
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0; /* Adding some padding */
+	background: orange; /* Add a white background color to the top navigation */
+	display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+ /* Style the links inside the navigation bar */
+ul li{
+	list-style: none;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:last-child{
+	border-right: none;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block;
+}
+/* Style the icon inside the navigation bar */
+ul li a .icon{
+	width: 40px; /* changing the width of the icon */
+	height: 40px; /* changing the height of the icon */
+	text-align: center;
+	
+	overflow: hidden;
+	margin: 0 auto 10px;
+	
+}
+/* set the size, height, width of the icon*/
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 34px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	color: #000;
+}
+
+/* Change the color of icon on hover */
+ul li a .icon .fa:last-child{
+	color: white;
+}
+/* style the color and transform of the icon on hover */
+ul li a:hover .icon .fa{
+	transform: translateY(-100%); /* translate y to add the hover effect */
+}
+ul li a .name{
+	position: relative;
+	height: 20px; 
+	width: 100%;
+	display: block;
+	overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000;
+	font-size: 18px; /* changing font size */
+	line-height: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	height: 1005;
+	color: white;
+	
+}
+/*style hover effect of ul li a .name span */
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="row">
+        <div class="column">
+                <img src="https://www.gprec.ac.in//wp-content/uploads/2019/05/gprec_logo_mobile.png" width="600px">
+        </div>
+        <div class="column">
+            <p id="mech">MECHANICAL ENGINEERING</p>
+        </div>
+        </div>
+        <div class="menu">
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Main\Experiments.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- this is home icon link get form fornt-awesome icon for home button -->	
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Home">Home</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Lagged cylinder\procedure.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Procedure">Procedure</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Lagged cylinder\simulator.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Simulator">Simulator</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\Admin\Desktop\Virtual Lab\Lagged cylinder\Calculator.html">
+                    <!-- this anchor text for link your Blog page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- this is Book icon link get form fornt-awesome icon for Blog --> 	
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- copy and paste the Book icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Calculation">Calculation</span></div>
+                    <!-- we are create seventh menu item name Blog -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-users" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-users" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->			
+                    </div>
+                    <div class="name"><span data-text="Team">Team</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+        </div>
+<style>
+    .menu{
+        position:relative;
+        top:30px;
+    }
+.col1{
+    position:relative;
+    right:1px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 80%;
+  padding: 5px;
+}
+#mech{
+    font-size: 45px;
+    font-family: sans-serif;
+    color:lightblue;
+    position:relative;
+    left:1px;
+}
+    </style>
+    <div class="procedure">
+        <div class="hea">
+            <h2>Test Procedure for Determining Thermal Conductivity of given Insulating Powder</h2>
+        </div>
+        <div class="main">
+            <p><strong>AIM:</strong>To plot the radial temperature distribution in the composite cylinder and to determine the thermal conductivity of the pipe insulation.</p>
+            <p><strong>APPARATUS:</strong><br>
+            The apparatus consists of a metal pipe with two layers of insulation. An electric heating coil wound on a silica rod is placed at the center. The ends are thickly insulated to prevent heat loss so that heat flows only in a radial direction. Three thermocouples each are placed at different radii to measure the temperature distribution within the cylinder.</p>
+            <p><strong>TECHNICAL DATA:</strong><br>
+            Location of thermocouples 1, 2, 3 at a radius r₁ = 25mm<br>
+            Location of thermocouples 4, 5, 6 at a radius rm = 50mm<br>
+            Location of thermocouples 7, 8, 9 on glass wool<br>
+            Location of thermocouples 10, 11,12 at a radius ro = 75mm<br>
+            Length of the pipe                                 = 500 mm<br></p>
+            <p><strong>PROCEDURE:</strong><br>
+            1. Connect the equipment to a 230 V, 5 amps, 50 Hz electrical source <br>
+            2. Turn the dimmerstat knob clockwise and fix the heat input to a desired wattage.<br>
+            3. Allow the equipment to stabilize and attain steady state<br>
+            4. Turn the thermocouple selector switch knob clockwise and note down temperaturesT1 to T12<br>
+            5. Repeat the experiment for different heat inputs.<br>
+            <p><strong>Result</strong><br>
+            Thermal conductivity of given insulating powder=  W/mK</p>
+            
+</p></div></div>
+</body>
+<style>
+    .main{
+        border: 2px solid black;
+        width:800px;
+        height:600px;
+        position:absolute;/* set the position of the navigation bar*/
+	    top: 700px;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+        background-color: lightgoldenrodyellow;
+    }
+    .hea{
+    border:2px solid black;
+    width:800px;
+    height:100px;
+    position:absolute;/* set the position of the navigation bar*/
+	top: 350px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    background-color: lightgoldenrodyellow;
+    }
+    
+</style>
+</html>

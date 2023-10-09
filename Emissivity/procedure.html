@@ -1,0 +1,302 @@
+<!doctype html>
+    <head>
+        <title>Procedure</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrap	list-style: none;
+	text-align: centecdn.com -->
+    
+    <style>	
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;/* we can change font style by using the font-familiy css tag */
+            background-color: lightgoldenrodyellow;
+        }
+        ul{
+            position:absolute;/* set the position of the navigation bar*/
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+            padding: 20px 0; /* Adding some padding */
+            background: orange; /* Add a white background color to the top navigation */
+            display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+            border-radius: 10px; /* add the border radius */
+            box-shadow: 0 10px 30px rgba(0,0,0,.3)
+        }
+         /* Style the links inside the navigation bar */
+        ul li{
+            list-style: none;
+            text-align: center;
+            display: block;
+            border-right: 1px solid rgba(0,0,0,0.2);
+        }
+        ul li:last-child{
+            border-right: none;
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 0 50px;
+            display: block;
+        }
+        /* Style the icon inside the navigation bar */
+        ul li a .icon{
+            width: 40px; /* changing the width of the icon */
+            height: 40px; /* changing the height of the icon */
+            text-align: center;
+            
+            overflow: hidden;
+            margin: 0 auto 10px;
+            
+        }
+/* set the size, height, width of the icon*/
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 34px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	color: #000;
+}
+
+/* Change the color of icon on hover */
+ul li a .icon .fa:last-child{
+	color: white;
+}
+/* style the color and transform of the icon on hover */
+ul li a:hover .icon .fa{
+	transform: translateY(-100%); /* translate y to add the hover effect */
+}
+ul li a .name{
+	position: relative;
+	height: 20px; 
+	width: 100%;
+	display: block;
+	overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000;
+	font-size: 18px; /* changing font size */
+	line-height: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	height: 1005;
+	color: white;
+	
+}
+/*style hover effect of ul li a .name span */
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="row">
+        <div class="column">
+                <img src="https://www.gprec.ac.in//wp-content/uploads/2019/05/gprec_logo_mobile.png" width="600px">
+        </div>
+        <div class="column">
+            <p id="mech">MECHANICAL ENGINEERING</p>
+        </div>
+        </div>
+        <div class="menu">
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="C:\Users\hp\Desktop\Virtual Lab\Main\Experiments.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- this is home icon link get form fornt-awesome icon for home button -->	
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Home">Home</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\hp\Desktop\Virtual Lab\Emissivity\procedure.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Procedure">Procedure</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\hp\Desktop\Virtual Lab\Emissivity\simulator.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Simulator">Simulator</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="C:\Users\hp\Desktop\Virtual Lab\Emissivity\Calculator.html">
+                    <!-- this anchor text for link your Blog page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- this is Book icon link get form fornt-awesome icon for Blog --> 	
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- copy and paste the Book icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Calculation">Calculation</span></div>
+                    <!-- we are create seventh menu item name Blog -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-users" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-users" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->			
+                    </div>
+                    <div class="name"><span data-text="Team">Team</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+        </div>
+<style>
+    .menu{
+        position:relative;
+        top:30px;
+    }
+.col1{
+    position:relative;
+    right:1px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 80%;
+  padding: 5px;
+}
+#mech{
+    font-size: 45px;
+    font-family: sans-serif;
+    color:lightblue;
+    position:relative;
+    left:1px;
+}
+    </style>
+
+    <div class="procedure">
+        <div class="hea">
+            <h2>Test Procedure for Emissivity measurement of Radiating surfaces</h2>
+        </div>
+        <div class="main">
+            <p><strong>AIM:</strong>To measure the emissivity of the test surface in comparison to black surface.</p>
+            <p><strong>APPARATUS:</strong><br>
+            The apparatus consists of two circular brass plates of identical dimensions. One of the plates is made black by applying a thick layer of lamp black while the other plate whose emissivity is to be measured is a gray body. Heating coils are provided at the bottom of the plates</p>
+            <p><strong>SPECIFICATIONS:</strong><br>
+            Specimen material : Brass<br>
+            Specimen Size : 150 mm, 6 mm thickness (gray & black body)<br>
+            Voltmeter: Digital type, 0-300v<br>
+            Ammeter : Digital type, 0-3 amps<br>
+            Dimmerstat : 0-240 V. 2 amps <br>
+            Temperature Indicator : Digital type, 0-300°C, K type <br>
+            Thermocouple Used : 7 nos.<br>
+            Heater : Sand witched type Nichrome heater, 400 W<br></p>
+            <p><strong>PROCEDURE:</strong><br>
+            1. Switch on the heater and adjust the voltage input to both the discs through dimmer-stat.<br>
+            2. Operate the dimmerstat very slowly and give same power input to both the heaters Say 50 V by using/operating cam switches provided.<br>
+            3. When steady state is reached note down the temperatures T to T by rotating the temperature selection switch.<br>
+            4. Also note down the voltmeter and ammeter readings.<br>
+            5. Repeat the experiment for different heat inputs.<br>
+            <p><strong>THEORY AND CALCULATIONS:</strong><br>
+            All substances at all temperatures emit thermal radiation. Thermal radiation is an electromagnetic wave and doesn't require any material medium for propagation. All bodies can emit radiation and have also the capacity to absorb all or part of the radiation coming from the surrounding towards it.
+
+An idealized black surface is one which absorbs all the incident radiation with reflectivity and
+
+transmissivity equal to zero. The emissivity of the surface is defined as the ratio of emissive power of a surface to that of a black surface at the same temperature. Any hot body maintained by a constant heat source, loses heat to surroundings by conduction, convection and radiation. If two bodies made of same geometry are heated under identical conditions, the heat loss by conduction and convection can be assumed same for both the bodies, when the difference in temperatures between these two bodies is not high. In such a case, when one
+
+body is black & the other body is gray from the values of different surface temperatures of the two
+
+bodies maintained by a constant power source emissivity can be calculated.<br> The heat loss by radiation depends on:<br>
+
+a) Characteristic of the material<br>
+
+ b) Geometry of the surface <br> c) Temperature of the surface<br>
+
+The heat loss by radiation when one body is completely enclosed by the other body is given by<br>
+Q=[]<br>
+If a body is losing heat to the surrounding atmosphere, then the area of atmosphere A: >> area of body A. Thus if any body is losing heat by radiation to the surrounding atmosphere equation (1)
+
+takes the form. <br>
+Q=σ A₁ ε (T<sub>1</sub><sup>4</sup>-T<sub>2</sub><sup>4</sup>) <br>
+Where, σ = Stefan Boltzmann constat = 5.6697 x 10 W/m<sup>-8</sup>K<sup>4</sup> <br>
+A₁=Surface area in m² <br>
+ε = Emissivity<br>
+T<sub>1</sub>= surface temperature of the body in K and<br>
+T<sub>2</sub>=surrounding atmospheric temperature in K<br>
+ Let us consider a black body & a gray body with identical geometry being heated under
+
+identical conditions, assuming conduction & convection heat loss to remain the same. Let Q and Q be the heat supplied to black & gray bodies respectively.<br>
+
+The same heat input is given to both test plate and black plate, 
+
+So Q<sub>b</sub> = Q<sub>t</sub>
+</p>
+<p><b>Heat loss by radiation by the black body = heat loss by radiation by the gray body</b><br><p>
+ σ x A<sub>b</sub> x ε<sub>b</sub> x (T<sub>b</sub><sup>4</sup> - T<sub>c</sub><sup>4</sup>) = σ x A<sub>t</sub> x ε<sub>t</sub> x (T<sub>t</sub><sup>4</sup> - T<sub>c</sub><sup>4</sup>)<br>
+         As geometry of two bodies are identical.<br>
+         A = A<sub>t</sub> = A<sub>b</sub> and  ε<sub>b</sub> = 1 for black body.<br>
+         Therefore,<br>
+         Where,    T<sub>b</sub> = (T<sub>1</sub> + T<sub>2</sub> + T<sub>3</sub>)/3 and T<sub>g</sub> = (T<sub>4</sub> + T<sub>5</sub> + T<sub>6</sub>)/3 and T<sub>c</sub> = T<sub>7</sub><br>
+            <p><strong>Result</strong><br>
+             Emissivity of a gray plate =  </p>
+            
+</p></div></div>
+</body>
+<style>
+    .main{
+        border: 2px solid black;
+        width:800px;
+        height:1275px;
+        position:absolute;/* set the position of the navigation bar*/
+	    top: 1030px;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+        background-color: lightgoldenrodyellow;
+    }
+    .hea{
+    border:2px solid black;
+    width:800px;
+    height:100px;
+    position:absolute;/* set the position of the navigation bar*/
+	top: 350px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    background-color: lightgoldenrodyellow;
+    }
+    
+</style>
+</html>
